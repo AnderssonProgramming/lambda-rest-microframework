@@ -40,7 +40,6 @@
 ### REST API - Time Server
 
 ![Time Server](images/rest_time_server.png)
-
 *GET /App/time returning the current time server*
 
 ### Unit Tests Results
