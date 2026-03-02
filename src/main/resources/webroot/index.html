@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambda REST Microframework</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>&#x1F680; Lambda REST Microframework</h1>
+            <p class="subtitle">A lightweight Java web framework with lambda-based REST services</p>
+        </header>
+
+        <section class="features">
+            <h2>&#x2728; Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>&#x1F4E1; REST Services</h3>
+                    <p>Define REST endpoints with lambda functions using <code>get()</code></p>
+                </div>
+                <div class="feature-card">
+                    <h3>&#x1F50D; Query Parameters</h3>
+                    <p>Extract query values with <code>req.getValues()</code></p>
+                </div>
+                <div class="feature-card">
+                    <h3>&#x1F4C1; Static Files</h3>
+                    <p>Serve HTML, CSS, JS, and images from configurable directories</p>
+                </div>
+                <div class="feature-card">
+                    <h3>&#x26A1; Lightweight</h3>
+                    <p>No external dependencies &mdash; pure Java with raw sockets</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo">
+            <h2>&#x1F9EA; Try the REST API</h2>
+            <div class="api-demo">
+                <div class="input-group">
+                    <label for="nameInput">Enter your name:</label>
+                    <input type="text" id="nameInput" placeholder="Pedro" value="Pedro">
+                    <button onclick="callHelloApi()">Call /App/hello</button>
+                </div>
+                <div id="result" class="result-box">
+                    <p class="placeholder">Click the button to test the API...</p>
+                </div>
+            </div>
+
+            <h3>Available Endpoints</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Endpoint</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/App/hello?name=Pedro</code></td>
+                        <td>Greeting service with query parameter</td>
+                        <td><button onclick="callApi('/App/hello?name=Pedro')">Try it</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>/App/pi</code></td>
+                        <td>Returns the value of PI</td>
+                        <td><button onclick="callApi('/App/pi')">Try it</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>/App/time</code></td>
+                        <td>Returns current server time</td>
+                        <td><button onclick="callApi('/App/time')">Try it</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>/App/echo?msg=test</code></td>
+                        <td>Echoes query parameters</td>
+                        <td><button onclick="callApi('/App/echo?msg=test&from=browser')">Try it</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Andersson David S&aacute;nchez M&eacute;ndez | Lambda REST Microframework</p>
+        </footer>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
