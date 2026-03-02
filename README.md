@@ -22,17 +22,26 @@
 ### REST API - Hello Service
 
 ![Hello Service](images/rest_hello.png)
+![Hello Service WebPage](images/rest_hello_wp.png)
 *GET /App/hello?name=Pedro returning a personalized greeting*
 
 ### REST API - PI Service
 
 ![PI Service](images/rest_pi.png)
+![PI Service WebPage](images/rest_pi_wp.png)
 *GET /App/pi returning the value of Math.PI*
 
 ### REST API - Greeting Page
 
 ![Greeting](images/rest_greeting.png)
+![Greeting WebPage](images/rest_greeting_wp.png)
 *GET /App/greeting?name=Pedro returning an HTML greeting page*
+
+### REST API - Time Server
+
+![Time Server](images/rest_time_server.png)
+
+*GET /App/time returning the current time server*
 
 ### Unit Tests Results
 
